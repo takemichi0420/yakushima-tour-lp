@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屋久島トレッキングツアー</title>
+
+    <!-- BootstrapのCDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- jQueryのCDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js">
+    </script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ファーストビュー＋価格情報 -->
+    <section class="firstview-section text-center text-white">
+        <div class="overlay">
+            <h1 class="title fw-bold">GW限定！親子で楽しむ大自然ツアー</h1>
+            <p class="text-white">初心者OK！プロガイド＆装備レンタル付</p>
+            <button class="btn btn-warning scrollToSection">残り20名！今すぐ予約する</button>
+
+            <div class="price mt-4">
+                <h1 class="day_Price">３泊４日<br>￥⚪︎×△,０００円〜</h1>
+                <button class="btn btn-warning scrollToSection">今すぐ予約する</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- カルーセル -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators"></div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/84463639770e7274e0f64efe702724be.webp"
+                    class="d-block w-100" alt="屋久島の風景" />
+                <p class="offer"></p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/1d8e58643734dc32856751fd23216518.jpg"
+                    class="d-block w-100" alt="縄文杉" />
+                <p class="offer">提供：屋久島観光協会</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/pic-sakuraran-dr.jpg" class="d-block w-100"
+                    alt="サクララン" />
+                <p class="offer">提供：屋久島観光協会</p>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- ツアーの特徴 -->
+    <section class="container mt-5">
+        <h2>ツアーの特徴</h2>
+        <div class="row">
+            <div class="col-12 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/Designer.jpeg" class="img-fluid rounded"
+                    alt="初心者・親子も安心なトレッキング" />
+                <p class="text-center">初心者・親子も安心 → ルート選択＆サポート体制</p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/e459abc8a8b194518bbf57e837407387.webp"
+                    class="img-fluid rounded" alt="プロガイド付きツアー" />
+                <p class="text-center">専門ガイド付き → 安全で楽しく学べる</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/737a21ad61620b1610500903c85cbbf5.webp"
+                    class="img-fluid rounded" alt="フル装備レンタル" />
+                <p class="text-center">フル装備レンタル → 手ぶらで参加OK</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/1d8e58643734dc32856751fd23216518.webp"
+                    class="img-fluid rounded" alt="絶景スポット巡り" />
+                <p class="text-center">絶景スポット巡り → 縄文杉・白谷雲水峡を満喫</p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/Designer-3.jpeg" class="img-fluid rounded"
+                    alt="特製ランチ" />
+                <p class="text-center">こだわりの食事 → 地元食材を活かした特製ランチ</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/4be05701af27fc03ff82d5ec8e776de1.webp"
+                    class="img-fluid rounded" alt="宿泊プラン" />
+                <p class="text-center">1泊2日の宿泊付きプランあり</p>
+            </div>
+            <div class="col-12 mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/Designer-1-1.jpeg" class="img-fluid rounded"
+                    alt="写真撮影サービス" />
+                <p class="text-center">写真撮影サービス → 思い出をプロカメラマンが記録</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary scrollToSection">このツアーに参加する</button>
+        </div>
+    </section>
+
+    <!-- 参加者の声 -->
+    <section class="container-fluid mt-5">
+        <h2>参加者の声</h2>
+        <div class="carousel-inner">
+            <div class="img-item01 active mb-4">
+                <img src="https://takemichi.work/wp-content/uploads/2025/02/Designer-1.jpeg"
+                    class="w-100 img-fluid rounded" alt="親子トレッキングツアー風景" />
+            </div>
+        </div>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success">
+                <strong>30代 男性（父親）</strong><br />
+                家族との時間をしっかり取れた貴重な体験。ガイドの説明も興味深く、装備レンタルで身軽に楽しめました。
+            </li>
+            <li class="list-group-item list-group-item-danger">
+                <strong>20代 女性（母親）</strong><br />
+                初心者でも安心して楽しめる内容。ジブリの世界のような白谷雲水峡が特に印象的でした。
+            </li>
+            <li class="list-group-item list-group-item-warning">
+                <strong>10代 男性（小学生）</strong><br />
+                自然の中で過ごすのが楽しくて、ゲームより面白かった！星空と夜の山に感動。
+            </li>
+        </ul>
+    </section>
+
+    <!-- 申し込みフォーム -->
+    <section id="section1" class="container-fluid bg-image py-5">
+        <h2>申し込みフォーム</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label text-white">お名前</label>
+                <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-white">メールアドレス</label>
+                <input type="email" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-success scrollToSection">今すぐ申し込む</button>
+        </form>
+        <p class="offer mt-3">提供：屋久島観光協会</p>
+    </section>
+
+    <!-- ポップアップバナー -->
+    <div class="popup-banner" id="popup-banner">
+        <span class="popup-close">&times;</span>
+        <p>今しか体験できない<br />屋久島の大自然！</p>
+        <h2 class="day_Price">３泊４日<br />￥xxx,０００円〜</h2>
+        <p class="messeage">あと残り <span class="blink">20</span> 名様！</p>
+        <p>早割あり！！</p>
+        <button onclick="window.location.href='#reservation'" class="scrollToSection">このツアーに参加する</button>
+    </div>
+
+    <!-- フッター -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container-fluid">
+            <p class="mb-1 fs-5 fw-bold">○✖️ツーリスト</p>
+            <p class="mb-1 fs-6">住所：東京都○○区△△1-2-3</p>
+            <p class="mb-0 fs-6">電話番号：XXXX-XXXX-XXXX</p>
+        </div>
+    </footer>
+
+    <!-- オーバーレイ -->
+    <div id="overlay" style="display: none;"></div>
+
+</body>
+
+</html>

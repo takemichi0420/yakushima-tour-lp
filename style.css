@@ -1,0 +1,193 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: url('https://takemichi.work/wp-content/uploads/2025/04/7966bae78213db11914ad7af893f8431.png');
+}
+
+/* カルーセル画像 */
+
+.carousel img {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel {
+    height: 300px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-inner img,
+.gallery-img {
+    width: 100vw !important;
+}
+
+/* テキスト装飾 */
+h2.text-white {
+    color: white;
+}
+
+p.light-blue {
+    color: #f95050;
+}
+
+p.offer,
+p.offer-first {
+    text-align: right;
+}
+
+.messeage {
+    font-weight: bold;
+}
+
+.blink {
+    animation: blinkAndScale 1s infinite;
+    color: red;
+    font-size: 50px;
+    display: inline-block;
+}
+
+@keyframes blinkAndScale {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+/* レイアウト調整 */
+.container.mt-5 {
+    padding: 50px;
+}
+
+.header {
+    height: 120px;
+}
+
+.firstview-section {
+    background: url('https://takemichi.work/wp-content/uploads/2025/02/Designer.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    position: relative;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.firstview-section .overlay {
+    background-color: rgba(0, 0, 0, 0.567);
+    /* 少し暗くして文字を読みやすく */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.price {
+    border-radius: 7px;
+    margin: 30px 10px 30px 10px;
+    background: #40d9ff;
+    background: linear-gradient(10deg, rgba(64, 217, 255, 1) 12%, rgb(229, 248, 120) 54%, rgba(126, 252, 187, 1) 88%);
+}
+
+.btn.btn-warning {
+    margin-bottom: 10px;
+}
+
+.day_Price {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+button.btn.btn-primary {
+    margin-bottom: 20px;
+}
+
+.img-item01 {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.list-group {
+    box-shadow: -9px 11px 5px -3px #363535;
+    border-radius: 10px;
+}
+
+
+/* 申し込みフォーム背景 */
+.container-fluid.bg-image {
+    background: url('https://takemichi.work/wp-content/uploads/2025/02/pic-taikoiwa-dr.jpg') no-repeat center;
+    background-size: cover;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* ヘッダー背景 */
+.bg-light {
+    background-image: url('https://takemichi.work/wp-content/uploads/2025/02/pic-okawa-rain-dr-e1739169241516.jpg');
+}
+
+/* ポップアップバナー */
+.popup-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 13px;
+    background: radial-gradient(circle, rgba(254, 254, 254, 1) 11%, rgba(101, 212, 245, 1) 100%);
+    box-shadow: 0 0 14px 8px #797777;
+    display: none;
+    z-index: 1000;
+}
+
+.popup-banner button {
+    background: rgb(0, 255, 55);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 閉じるボタン */
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+/* オーバーレイ背景 */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 999;
+}
