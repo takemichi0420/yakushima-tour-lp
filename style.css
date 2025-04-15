@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: url('https://takemichi.work/wp-content/uploads/2025/04/7966bae78213db11914ad7af893f8431.png');
+    background: url('https://takemichi.work/wp-content/uploads/2025/04/c3a0ce2d24ce48de1801a60e20f36bd1.png');
 }
 
 /* カルーセル画像 */
@@ -22,11 +22,6 @@ body {
 .carousel-control-next {
     top: 50%;
     transform: translateY(-50%);
-}
-
-.carousel-inner img,
-.gallery-img {
-    width: 100vw !important;
 }
 
 /* テキスト装飾 */
